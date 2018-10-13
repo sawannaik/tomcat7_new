@@ -2,4 +2,4 @@
 - hosts: webservers
   become: yes
   roles:
-    - {role: tomcat7_new, when: ansible_os_family=="RedHat"}
+    - {role: mytom, when: ansible_os_family=="RedHat"}
